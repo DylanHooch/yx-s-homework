@@ -113,20 +113,10 @@ int main() {
 		case 6:
 			reset(currentPoly);
 			break;
-		case 7:
+		default:
 			delete currentPoly;
 			cout << "ÔÙ¼û" << endl;
 			exit(0);
 		}
 	}
-	//string input, input2;
-	//cin >> input;
-	//cin >> input2;
-	////print(segment(input));
-	//Polynomia p(segment(input));
-	//Polynomia p2(segment(input2));
-	//p += p2;
-	//p.simplify();
-	//p.sort();
-	//p.print();
 }

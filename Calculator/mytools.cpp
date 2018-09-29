@@ -161,7 +161,7 @@ void Polynomia::operator*=(const Polynomia& a) {//需要较大开销，整个表重新创建
 	}
 	//删除老链表
 	Term* temp;
-	for (Term* p = oldHead; p->next != NULL; p = p->next){
+	for (Term* p = oldHead; p->next != NULL;){
 		temp = p->next;
 		p->next = p->next->next;
 		delete temp;
